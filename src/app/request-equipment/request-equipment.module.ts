@@ -8,6 +8,8 @@ import { ExploreContainerComponentModule } from '../explore-container/explore-co
 
 import { RequestEquipmentPageRoutingModule } from './request-equipment-routing.module';
 import { SharedModule } from '../shared/shared.module';
+import { CategoriesPageContainerComponent } from './categories/categories.page.container';
+import { CategoriesPageComponent } from './categories/categories.page.component';
 
 @NgModule({
   imports: [
@@ -18,6 +20,11 @@ import { SharedModule } from '../shared/shared.module';
     ExploreContainerComponentModule,
     RequestEquipmentPageRoutingModule
   ],
-  declarations: [RequestEquipmentPageComponent, RequestEquipmentPageContainerComponent]
+  declarations: [
+    RequestEquipmentPageContainerComponent,
+    RequestEquipmentPageComponent, 
+    CategoriesPageContainerComponent,
+    CategoriesPageComponent
+  ]
 })
 export class RequestEquipmentPageModule {}
