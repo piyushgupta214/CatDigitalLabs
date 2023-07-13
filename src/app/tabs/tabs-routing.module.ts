@@ -1,34 +1,38 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { TabsPage } from './tabs.page';
+import { TabsPageContainerComponent } from './tabs.page.container';
 
 const routes: Routes = [
   {
     path: 'tabs',
-    component: TabsPage,
+    component: TabsPageContainerComponent,
     children: [
       {
-        path: 'tab1',
-        loadChildren: () => import('../tab1/tab1.module').then(m => m.Tab1PageModule)
+        path: 'request-equipment',
+        loadChildren: () => import('../request-equipment/request-equipment.module').then(m => m.RequestEquipmentPageModule)
       },
       {
-        path: 'tab2',
-        loadChildren: () => import('../tab2/tab2.module').then(m => m.Tab2PageModule)
+        path: 'active-rentals',
+        loadChildren: () => import('../active-rentals/active-rentals.module').then(m => m.ActiveRentalsPageModule)
       },
       {
-        path: 'tab3',
-        loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
+        path: 'open-requests',
+        loadChildren: () => import('../open-requests/open-requests.module').then(m => m.OpenRequestsPageModule)
+      },
+      {
+        path: 'my-yard',
+        loadChildren: () => import('../my-yard/my-yard.module').then(m => m.MyYardPageModule)
       },
       {
         path: '',
-        redirectTo: '/tabs/tab1',
+        redirectTo: '/tabs/request-equipment',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/tab1',
+    redirectTo: '/tabs/request-equipment',
     pathMatch: 'full'
   }
 ];
