@@ -42,8 +42,22 @@ This PoC can be divided into three pages
     * Should have 4 tabs at footer
 
 ## Nice to Have
-    * Splash Screen
-    * Login Page to look it more realistic 
-    * logout option
-    * Loading Indicator to show whenever there is latency issue with network.
-    * Other three tabs clickable 
+* Splash Screen
+* Login Page to look it more realistic 
+* logout option
+* Loading Indicator to show whenever  there is latency issue with network.
+* Other three tabs clickable 
+
+# Application Architecture
+## Keep It simple 
+
+* MVVM design pattern with presentational container to implement this project would be the first and clean architecture apporach.
+
+* html and component file will be our view for the Model-View-ViewModel approach
+
+* Presentational container will be the ViewModel, and this can communnicate with other cross ViewModels or layers.
+
+* For Data and network related operations, ngrx is good choice to go with so we can flow data in one direction.
+
+
+
