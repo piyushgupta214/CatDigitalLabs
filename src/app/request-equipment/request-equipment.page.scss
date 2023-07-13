@@ -1,0 +1,26 @@
+ion-row{
+    display: flex;
+    align-items: center;
+    ion-col{
+        ion-img{
+            height: 120px;
+        }
+        .title{
+            font-weight: bold;
+            font-size: 15px;
+            margin-bottom: 16px;
+        }
+        .props{
+            display: flex;
+            align-items: center;
+            ion-img{
+                height: 15px;
+                margin-right: 5px;
+            }
+            ion-label{
+                font-size:11px;
+                line-height: 24px;
+            }
+        }
+    }
+}

@@ -8,7 +8,6 @@
 
 
 ion-header{
-  @include shadow;
   ion-toolbar{
     --background: var(--ion-color-cat-black);
   }

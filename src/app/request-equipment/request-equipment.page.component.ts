@@ -7,6 +7,18 @@ import { Component } from '@angular/core';
 })
 export class RequestEquipmentPageComponent {
 
+  rentalStoreProps = [
+    'Newest rental fleet in the industry',
+    'Unlimited length of Rental',
+    'Quick response time on availability' 
+  ];
+
+  contractOwnedProps = [
+    'Fixed rental length',
+    '24-hr response time', 
+    'Discounted Prices'
+  ]
+
   constructor() {}
 
 }
