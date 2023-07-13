@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import * as fromRoot from '../../stores/redcuers';
-import { loadCatelogs, loadSubcategories } from 'src/app/stores/request-equipment/request-equipment.actions';
+import { loadCatelogs, loadEquipmentDetails, loadSubcategories } from 'src/app/stores/request-equipment/request-equipment.actions';
 import { selectAllRequestEquipment } from 'src/app/stores/request-equipment/request-equipment.selectors';
 import { Catelogs } from 'src/app/models/catelogs.model';
 import { Observable } from 'rxjs';
@@ -25,6 +25,9 @@ export class CategoriesPageContainerComponent implements OnInit {
     this.store.dispatch(loadSubcategories({catelog}));
   }
 
+  showEquipmentDetail(event: any){
+    this.store.dispatch(loadEquipmentDetails(event));
+  }
   
 
 }

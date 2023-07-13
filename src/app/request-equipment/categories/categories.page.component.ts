@@ -13,6 +13,9 @@ export class CategoriesPageComponent{
 
   @Output() loadSubcategories: EventEmitter<Catelogs> = new EventEmitter();
 
+  @Output() showEquipmentDetail: EventEmitter<any> = new EventEmitter();
+
+
   selectedCategoryId: number = undefined ;
 
   constructor() {}

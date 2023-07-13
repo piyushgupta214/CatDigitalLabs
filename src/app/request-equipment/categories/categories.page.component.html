@@ -12,7 +12,7 @@
       </ion-item>
       <ng-container *ngIf="catelog.subcategory && catelog.subcategory.length>0 
         && selectedCategoryId === catelog.id">
-        <div class="heading" *ngFor="let sub of catelog.subcategory">
+        <div class="subcategory" *ngFor="let sub of catelog.subcategory" (click)="showEquipmentDetail.emit({catelog, subcategoryId: sub.id})">
           <ion-label>{{sub.display_name}}</ion-label>
         </div>
       </ng-container>

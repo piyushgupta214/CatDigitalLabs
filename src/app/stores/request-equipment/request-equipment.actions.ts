@@ -6,6 +6,8 @@ export enum RequestEquipmentActionTypes {
   CatelogsLoaded = '[RequestEquipment/API] Catelogs Loaded',
   LoadSubcategories = '[RequestEquipment/API] Load Subcategories',
   SubcategoriesLoaded = '[RequestEquipment/API] Subcategories Loaded',
+  LoadEquipmentDetails = '[RequestEquipment/API] Load Equipment Details',
+  EquipmentDetailsLoaded = '[RequestEquipment/API] Equipment Details Loaded',
   RequestEquipmentError = '[RequestEquipment/API] Request Equipment Error',
 }
 
@@ -25,6 +27,16 @@ export const loadSubcategories = createAction(
 
 export const subcategoriesLoaded = createAction(
   RequestEquipmentActionTypes.SubcategoriesLoaded,
+  props<{ catelog: Catelogs}>()
+);
+
+export const loadEquipmentDetails = createAction(
+  RequestEquipmentActionTypes.LoadEquipmentDetails,
+  props<{ catelog: Catelogs, subcategoryId: number}>()
+);
+
+export const equipmentDetailsLoaded = createAction(
+  RequestEquipmentActionTypes.EquipmentDetailsLoaded,
   props<{ catelog: Catelogs}>()
 );
 
