@@ -1,2 +1,4 @@
-<app-categories-ui class="ion-page">
+<app-categories-ui class="ion-page"
+[catelogs] = "catelogs$ | async"
+(loadSubcategories) = loadSubcategories($event)>
 </app-categories-ui>
