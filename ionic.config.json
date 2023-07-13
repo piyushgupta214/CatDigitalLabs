@@ -1,0 +1,7 @@
+{
+  "name": "CatDigitalLabs",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
