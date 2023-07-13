@@ -1,15 +1,1 @@
 
-ion-tab-button {
-    border-bottom: 1px solid black;
-    ion-label{
-      font-size: 14px;
-    }
-
-    &.tab-selected {
-      border-color: #FEC639;
-      color: #FEC639;
-      ion-label{
-        font-weight: bold;
-      } 
-    }
-  }

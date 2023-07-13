@@ -7,15 +7,17 @@ import { MyYardPageContainerComponent } from './my-yard.page.container';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
 import { MyYardPageRoutingModule } from './my-yard-routing.module';
+import {SharedModule} from "../shared/shared.module";
 
 @NgModule({
-  imports: [
-    IonicModule,
-    CommonModule,
-    FormsModule,
-    ExploreContainerComponentModule,
-    MyYardPageRoutingModule
-  ],
+    imports: [
+        IonicModule,
+        CommonModule,
+        FormsModule,
+        ExploreContainerComponentModule,
+        MyYardPageRoutingModule,
+        SharedModule
+    ],
   declarations: [MyYardPageComponent, MyYardPageContainerComponent]
 })
 export class MyYardPageModule {}

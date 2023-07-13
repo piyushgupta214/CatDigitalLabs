@@ -7,15 +7,17 @@ import { OpenRequestsPageContainerComponent } from './open-requests.page.contain
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
 import { OpenRequestsPageRoutingModule } from './open-requests-routing.module';
+import {SharedModule} from "../shared/shared.module";
 
 @NgModule({
-  imports: [
-    IonicModule,
-    CommonModule,
-    FormsModule,
-    ExploreContainerComponentModule,
-    OpenRequestsPageRoutingModule
-  ],
+    imports: [
+        IonicModule,
+        CommonModule,
+        FormsModule,
+        ExploreContainerComponentModule,
+        OpenRequestsPageRoutingModule,
+        SharedModule
+    ],
   declarations: [OpenRequestsPageComponent, OpenRequestsPageContainerComponent]
 })
 export class OpenRequestsPageModule {}

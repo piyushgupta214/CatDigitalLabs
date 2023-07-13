@@ -1,0 +1,7 @@
+@import 'variables.scss';
+
+@mixin shadow {
+  -moz-box-shadow: 0 4px 10px 1px var(--ion-color-cat-black);
+  -webkit-box-shadow: 0 4px 10px 1px var(--ion-color-cat-black);
+  box-shadow: 0 4px 10px 1px var(--ion-color-cat-black);
+}

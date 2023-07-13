@@ -7,15 +7,17 @@ import { ActiveRentalsPageContainerComponent } from './active-rentals.page.conta
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
 import { ActiveRentalsPageRoutingModule } from './active-rentals-routing.module';
+import {SharedModule} from "../shared/shared.module";
 
 @NgModule({
-  imports: [
-    IonicModule,
-    CommonModule,
-    FormsModule,
-    ExploreContainerComponentModule,
-    ActiveRentalsPageRoutingModule
-  ],
+    imports: [
+        IonicModule,
+        CommonModule,
+        FormsModule,
+        ExploreContainerComponentModule,
+        ActiveRentalsPageRoutingModule,
+        SharedModule
+    ],
   declarations: [ActiveRentalsPageComponent, ActiveRentalsPageContainerComponent]
 })
 export class ActiveRentalsPageModule {}

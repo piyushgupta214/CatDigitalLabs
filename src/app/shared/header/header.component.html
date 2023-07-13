@@ -1,0 +1,11 @@
+<ion-header>
+  <ion-toolbar >
+      <ion-button slot="start" fill="clear" (click)="backClick.emit($event)">
+        <ion-icon name="chevron-back-outline"></ion-icon>
+      </ion-button>
+      <ion-title>{{titleText}}</ion-title>
+      <ion-button slot="end" fill="clear" (click)="makeCall.emit($event)">
+        <ion-icon name="call-outline"></ion-icon>
+      </ion-button>
+  </ion-toolbar>
+</ion-header>

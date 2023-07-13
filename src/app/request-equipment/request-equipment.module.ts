@@ -7,12 +7,14 @@ import { RequestEquipmentPageContainerComponent } from './request-equipment.page
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
 import { RequestEquipmentPageRoutingModule } from './request-equipment-routing.module';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   imports: [
     IonicModule,
     CommonModule,
     FormsModule,
+    SharedModule,
     ExploreContainerComponentModule,
     RequestEquipmentPageRoutingModule
   ],
