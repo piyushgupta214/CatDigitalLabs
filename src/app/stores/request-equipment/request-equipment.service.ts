@@ -38,6 +38,8 @@ export class RequestEquipmentService {
       .get<Catelogs>(`http://yardclub.github.io/mobile-interview/api/results.json`)
       .pipe(
         map((response: any) => {
+          response.featured_photos = response.featured_photos.map((photo: any) => 
+          photo.url.replace('https://github.com', 'https://raw.githubusercontent.com').replace('blob/', ''));
           let updatedCatelog = copy(catelog);
           let subcategoryIndex = updatedCatelog.subcategory.findIndex(sub=> sub.id === subcategoryId);
           updatedCatelog.subcategory[subcategoryIndex].requestEquipment = response;

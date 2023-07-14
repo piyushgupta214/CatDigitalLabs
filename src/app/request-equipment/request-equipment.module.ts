@@ -1,5 +1,5 @@
 import { IonicModule } from '@ionic/angular';
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RequestEquipmentPageComponent } from './request-equipment.page.component';
@@ -10,6 +10,8 @@ import { RequestEquipmentPageRoutingModule } from './request-equipment-routing.m
 import { SharedModule } from '../shared/shared.module';
 import { CategoriesPageContainerComponent } from './categories/categories.page.container';
 import { CategoriesPageComponent } from './categories/categories.page.component';
+import { RequestEquipmentDetailPageContainerComponent } from './request-equipment-detail/request-equipment-detail.page.container';
+import { RequestEquipmentDetailPageComponent } from './request-equipment-detail/request-equipment-detail.page.component';
 
 @NgModule({
   imports: [
@@ -24,7 +26,10 @@ import { CategoriesPageComponent } from './categories/categories.page.component'
     RequestEquipmentPageContainerComponent,
     RequestEquipmentPageComponent, 
     CategoriesPageContainerComponent,
-    CategoriesPageComponent
-  ]
+    CategoriesPageComponent,
+    RequestEquipmentDetailPageContainerComponent,
+    RequestEquipmentDetailPageComponent
+  ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class RequestEquipmentPageModule {}

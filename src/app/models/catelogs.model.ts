@@ -14,7 +14,7 @@ export interface Subcategory{
 export interface RequestEquipment{
     display_name: string;
     results?: EquipmentDetails[];
-    featured_photos?: FeaturedPhoto[];
+    featured_photos?: [];
 }
 
 export interface EquipmentDetails {
@@ -25,8 +25,4 @@ export interface EquipmentDetails {
     weekly_rate: string;
     operated_rates: string;
     monthly_rate: string;
-}
-
-export interface FeaturedPhoto{
-    url: string;
 }

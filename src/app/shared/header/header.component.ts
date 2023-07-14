@@ -19,6 +19,9 @@ export class HeaderComponent {
   @Input()
   titleText = '';
 
+  @Input()
+  canNavigateback = false;
+
   @Output()
   makeCall: EventEmitter<any> = new EventEmitter();
 

@@ -1,0 +1,30 @@
+ion-row{
+    ion-col{
+        &:first-child {
+            text-align: left;
+
+        }
+        &:last-child {
+            text-align: left;
+            font-weight: bold;
+        }
+    }
+}
+
+ion-card{
+    background: var(--ion-color-cat-black);
+    color:white;
+    ion-card-header{
+        padding-bottom: 0;
+    }
+    ion-card-subtitle{
+        font-size: 21px;
+        color: var(--ion-color-cat-yellow);
+    }
+    .description{
+        font-size: 18px;
+        margin-bottom: 16px;
+        color:white;
+        font-weight: 500;
+    }
+}

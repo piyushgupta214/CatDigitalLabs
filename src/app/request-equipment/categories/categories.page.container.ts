@@ -5,6 +5,8 @@ import { loadCatelogs, loadEquipmentDetails, loadSubcategories } from 'src/app/s
 import { selectAllRequestEquipment } from 'src/app/stores/request-equipment/request-equipment.selectors';
 import { Catelogs } from 'src/app/models/catelogs.model';
 import { Observable } from 'rxjs';
+import { ModalController } from '@ionic/angular';
+import { RequestEquipmentDetailPageContainerComponent } from '../request-equipment-detail/request-equipment-detail.page.container';
 
 @Component({
   selector: 'app-categories',
@@ -15,7 +17,7 @@ import { Observable } from 'rxjs';
 export class CategoriesPageContainerComponent implements OnInit {
 
   catelogs$: Observable<Catelogs[]> = this.store.select(selectAllRequestEquipment);
-  constructor( private store: Store<fromRoot.State>,) {}
+  constructor( private store: Store<fromRoot.State>, private modalController: ModalController) {}
 
   ngOnInit(): void {
    this.store.dispatch(loadCatelogs());
@@ -25,8 +27,16 @@ export class CategoriesPageContainerComponent implements OnInit {
     this.store.dispatch(loadSubcategories({catelog}));
   }
 
-  showEquipmentDetail(event: any){
+  async showEquipmentDetail(event: any){
     this.store.dispatch(loadEquipmentDetails(event));
+    const modal = await this.modalController.create({
+      component: RequestEquipmentDetailPageContainerComponent,
+      componentProps: {
+        subcategoryId: event.subcategoryId,
+        catelog: event.catelog
+      }
+    });
+    return await modal.present();
   }
   
 

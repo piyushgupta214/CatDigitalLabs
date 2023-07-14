@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-toolbar >
+      <ion-button fill="clear" slot="start" (click)="close.emit()">
+        <ion-icon name="close-outline"></ion-icon>
+      </ion-button>
+      <ion-title class="ion-text-center">{{requestEquipment?.display_name}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ 
+  <!-- le section for Images -->
+  <swiper-container [pagination]="{ type: 'bullets' }">
+    <swiper-slide *ngFor="let photo of requestEquipment?.featured_photos">
+      <ion-img [src]="photo"></ion-img>
+    </swiper-slide>
+  </swiper-container>
+
+  <ion-card *ngFor="let result of requestEquipment?.results">
+    <ion-card-header>
+      <ion-card-subtitle>{{result.name}}</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <div class="description">{{result.description}}</div>
+      <!-- le row for daily rate -->
+      <ion-row class="ion-no-margin ion-no-padding">
+        <ion-col class="ion-no-margin ion-no-padding">
+          Daily Rate:
+        </ion-col>
+        <ion-col class="ion-no-margin ion-no-padding">
+          {{result.daily_rate}}
+        </ion-col>
+      </ion-row>
+      <!-- le row for Weekly rate -->
+      <ion-row class="ion-no-margin ion-no-padding">
+        <ion-col class="ion-no-margin ion-no-padding">
+          Weekly Rate:
+        </ion-col>
+        <ion-col class="ion-no-margin ion-no-padding">
+          {{result.weekly_rate}}
+        </ion-col>
+      </ion-row>
+      <!-- le row for Monthly rate -->
+      <ion-row class="ion-no-margin ion-no-padding">
+        <ion-col class="ion-no-margin ion-no-padding">
+          Monthly Rate:
+        </ion-col>
+        <ion-col class="ion-no-margin ion-no-padding">
+          {{result.monthly_rate}}
+        </ion-col>
+      </ion-row>
+      <!-- le row for Operated rate -->
+      <ion-row class="ion-no-margin ion-no-padding">
+        <ion-col class="ion-no-margin ion-no-padding">
+          Operated Rates:
+        </ion-col>
+        <ion-col class="ion-no-margin ion-no-padding">
+          {{result.operated_rates}}
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

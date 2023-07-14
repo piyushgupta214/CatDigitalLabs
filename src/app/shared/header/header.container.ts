@@ -13,6 +13,8 @@ import { NavigationService } from '../services/navigation.service';
 export class HeaderContainerComponent {
   @Input() titleText = '';
 
+  @Input() canNavigateback = false;
+
   constructor(
     private navigation: NavigationService
   ) {}
