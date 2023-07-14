@@ -60,4 +60,12 @@ This PoC can be divided into three pages
 * For Data and network related operations, ngrx is good choice to go with so we can flow data in one direction.
 
 
+# FINAL SUBMISSION
+
+As per the given task, project is completed...
+
+* When user launch the app, he will redirect to  "Request Equipment" Page.
+* User can tap on "Cat Digital Labs" icon to navigate to see all the available "Catalog". 
+* User can tap on any "Catalog" to see "subcategory" item.
+* User can select any subcategory to check the request equipment detail - it will present as a modal. 
 
