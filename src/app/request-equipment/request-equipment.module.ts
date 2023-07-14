@@ -4,7 +4,6 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RequestEquipmentPageComponent } from './request-equipment.page.component';
 import { RequestEquipmentPageContainerComponent } from './request-equipment.page.container';
-import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
 import { RequestEquipmentPageRoutingModule } from './request-equipment-routing.module';
 import { SharedModule } from '../shared/shared.module';
@@ -19,7 +18,6 @@ import { RequestEquipmentDetailPageComponent } from './request-equipment-detail/
     CommonModule,
     FormsModule,
     SharedModule,
-    ExploreContainerComponentModule,
     RequestEquipmentPageRoutingModule
   ],
   declarations: [

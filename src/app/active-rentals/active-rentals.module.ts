@@ -4,7 +4,6 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ActiveRentalsPageComponent } from './active-rentals.page.component';
 import { ActiveRentalsPageContainerComponent } from './active-rentals.page.container';
-import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
 import { ActiveRentalsPageRoutingModule } from './active-rentals-routing.module';
 import {SharedModule} from "../shared/shared.module";
@@ -14,7 +13,6 @@ import {SharedModule} from "../shared/shared.module";
         IonicModule,
         CommonModule,
         FormsModule,
-        ExploreContainerComponentModule,
         ActiveRentalsPageRoutingModule,
         SharedModule
     ],

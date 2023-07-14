@@ -1,8 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
-
-import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
-
 import { ActiveRentalsPageComponent } from './active-rentals.page.component';
 
 describe('ActiveRentalsPage', () => {
@@ -12,7 +9,7 @@ describe('ActiveRentalsPage', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ActiveRentalsPageComponent],
-      imports: [IonicModule.forRoot(), ExploreContainerComponentModule]
+      imports: [IonicModule.forRoot()]
     }).compileComponents();
 
     fixture = TestBed.createComponent(ActiveRentalsPageComponent);
