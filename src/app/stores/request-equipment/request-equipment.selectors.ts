@@ -26,8 +26,3 @@ export const selectRequestEquipmentDetail = createSelector(
    return requestEquipment
   }
 );
-
-// export const getCount = (multiply: number) => createSelector(
-//   getCounterValue,
-//   (counter) => counter * multiply
-// );
