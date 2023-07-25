@@ -1,6 +1,5 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
-import * as fromRoot from '../../stores/redcuers';
 import { loadCatelogs, loadEquipmentDetails, loadSubcategories } from 'src/app/stores/request-equipment/request-equipment.actions';
 import { selectAllRequestEquipment } from 'src/app/stores/request-equipment/request-equipment.selectors';
 import { Catelogs } from 'src/app/models/catelogs.model';
@@ -17,7 +16,7 @@ import { RequestEquipmentDetailPageContainerComponent } from '../request-equipme
 export class CategoriesPageContainerComponent implements OnInit {
 
   catelogs$: Observable<Catelogs[]> = this.store.select(selectAllRequestEquipment);
-  constructor( private store: Store<fromRoot.State>, private modalController: ModalController) {}
+  constructor( private store: Store, private modalController: ModalController) {}
 
   ngOnInit(): void {
    this.store.dispatch(loadCatelogs());
@@ -38,6 +37,6 @@ export class CategoriesPageContainerComponent implements OnInit {
     });
     return await modal.present();
   }
-  
+
 
 }
