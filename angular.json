@@ -4,6 +4,12 @@
   "newProjectRoot": "projects",
   "projects": {
     "app": {
+      "i18n": {
+        "sourceLocale": "en-US",
+        "locales": {
+          "es-US" : "src/locale/messages.es.xlf"
+        }
+      },
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,6 +19,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "localize": true,
             "outputPath": "www",
             "index": "src/index.html",
             "main": "src/main.ts",

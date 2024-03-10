@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="187187500641108332" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{&apos;Featured Equipment&apos; | uppercase}}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/request-equipment/request-equipment.page.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/request-equipment/request-equipment.page.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/request-equipment/request-equipment.page.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/request-equipment/request-equipment.page.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7268412358377334787" datatype="html">
+        <source>Cat Image</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/request-equipment/request-equipment.page.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2262062567737586705" datatype="html">
+        <source>Newest rental fleet in the industry</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/request-equipment/request-equipment.page.component.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3956277951233821465" datatype="html">
+        <source>Unlimited length of Rental</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/request-equipment/request-equipment.page.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8406804215642288757" datatype="html">
+        <source>Quick response time on availability</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/request-equipment/request-equipment.page.component.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2108474520639213461" datatype="html">
+        <source>Fixed rental length</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/request-equipment/request-equipment.page.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1256844626927110605" datatype="html">
+        <source>24-hr response time</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/request-equipment/request-equipment.page.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4260576107338575817" datatype="html">
+        <source>Discounted Prices</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/request-equipment/request-equipment.page.component.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

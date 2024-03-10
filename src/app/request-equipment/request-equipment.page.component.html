@@ -1,13 +1,13 @@
-<app-header titleText="Request Equipment"></app-header>
+<app-header i18n titleText="Request Equipment"></app-header>
 
 <ion-content>
  
   <!-- le section for Featured Equipment -->
-  <div class="heading">{{'Featured Equipment' | uppercase}}</div>
-  <ion-img src="../../assets/icon/img_featured.png"></ion-img>
+  <div class="heading" i18n>{{'Featured Equipment' | uppercase}}</div>
+  <ion-img alt="Cat Image" i18n-alt  src="../../assets/icon/img_featured.png"></ion-img>
 
   <!-- le section for Choose Rental Store -->
-  <div class="heading">{{'Choose Rental Store' | uppercase}}</div>
+  <div class="heading" i18n>{{'Choose Rental Store' | uppercase}}</div>
     <!-- le section for rental store -->
     <ion-row>
       <ion-col size="5">
@@ -15,7 +15,7 @@
       </ion-col>
       <ion-col>
 
-        <div class="title">{{'Rental Store' | uppercase}}</div>
+        <div class="title" i18n>{{'Rental Store' | uppercase}}</div>
         <div class="props" *ngFor="let prop of rentalStoreProps">
           <ion-img src="../../assets/icon/icn_check.png"></ion-img>
           <ion-label>{{prop}}</ion-label>
@@ -29,11 +29,11 @@
     <!-- le section for contract owned -->
     <ion-row>
       <ion-col size="5" [routerLink]="'categories'">
-        <ion-img src="../../assets/icon/logo_cat_digital.png"></ion-img>
+        <ion-img alt="cat digital" alt-i18n src="../../assets/icon/logo_cat_digital.png"></ion-img>
       </ion-col>
       <ion-col>
 
-        <div class="title">{{'Contractor-owned' | uppercase}}</div>
+        <div class="title" i18n>{{'Contractor-owned' | uppercase}}</div>
         <div class="props" *ngFor="let prop of contractOwnedProps">
           <ion-img src="../../assets/icon/icn_check.png"></ion-img>
           <ion-label>{{prop}}</ion-label>

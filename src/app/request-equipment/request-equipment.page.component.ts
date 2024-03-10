@@ -7,16 +7,18 @@ import { Component } from '@angular/core';
 })
 export class RequestEquipmentPageComponent {
 
+  text = `string_to_translate`;
+
   rentalStoreProps = [
-    'Newest rental fleet in the industry',
-    'Unlimited length of Rental',
-    'Quick response time on availability' 
+    $localize `Newest rental fleet in the industry`,
+    $localize `Unlimited length of Rental`,
+    $localize `Quick response time on availability` 
   ];
 
   contractOwnedProps = [
-    'Fixed rental length',
-    '24-hr response time', 
-    'Discounted Prices'
+    $localize `Fixed rental length`,
+    $localize `24-hr response time`, 
+    $localize `Discounted Prices`
   ]
 
   constructor() {}
