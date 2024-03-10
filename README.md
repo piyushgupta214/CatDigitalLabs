@@ -1,4 +1,5 @@
-get exercise details at https://yardclub.github.io/mobile-interview/
+get exercise details at https://yardclub.github.io/mobile-interview/ 
+https://stackoverflow.com/questions/74747479/is-it-possible-to-use-angular-localization-in-an-ionic-application
 
 ***
 # Initial Thoughts 
